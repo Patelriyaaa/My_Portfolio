@@ -1,0 +1,39 @@
+# 🌐 Riya Patel's Developer Portfolio
+
+Welcome to my personal portfolio website – a modern, responsive, and cleanly designed web app built with **React** to showcase my projects, experience, skills, and achievements as a Software Engineer.
+---
+
+## 🧰 Tech Stack
+
+| Area         | Technologies Used                        |
+|--------------|-------------------------------------------|
+| Frontend     | React.js, Tailwind CSS, JavaScript        |
+| Animations   | Framer Motion                             |
+| Icons        | React Icons, Tabler Icons                 |
+| Hosting      | GitHub Pages / Vercel / Netlify (choose one) |
+
+---
+
+## ✨ Features
+
+- 📱 Fully responsive across all devices
+- 🎨 Clean, minimal UI with smooth animations
+- 🧠 Sectioned layout: About, Skills, Projects, Experience, Contact
+- 💬 Dynamic contact form (optional email integration)
+- 🛠️ Easy to customize for your own use
+
+---
+
+## 📁 Folder Structure
+
+```bash
+My_Portfolio/
+├── public/
+│   └── images, favicon, preview assets
+├── src/
+│   ├── components/       # Reusable components (Navbar, Footer, etc.)
+│   ├── pages/            # Main sections like About, Projects, etc.
+│   ├── assets/           # Icons, logos, illustrations
+│   ├── App.js            # Main app structure
+│   └── index.js          # Entry point
+└── tailwind.config.js    # Tailwind configuration
