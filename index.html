@@ -1,110 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riya Patel Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Riya Patel Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="logo">Riya Patel</div>
-        <nav>
-            <ul>
-                <li><a href="#">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="logo">Riya Patel</div>
+    <nav>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-
-    <section class="hero">
-        <div class="hero-content">
-            <div class="profile-image">
-                <img src="placeholder-profile.jpg" alt="Riya Patel">
-            </div>
-            <h2 class="welcome-text">Welcome to My Portfolio</h2>
-            <h1 class="hero-title">Hi, I'm Riya Patel</h1>
-            <p class="hero-description">Passionate developer with expertise in creating innovative, AI-driven web applications and dynamic software solutions.</p>
-            <div class="hero-buttons">
-                <a href="#" class="button primary-button">View Projects</a>
-                <a href="#" class="button secondary-button">Get in Touch</a>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="projects" class="featured-projects-section">
-    <div class="container">
-        <h2>Featured Projects</h2>
-        <p class="section-subtitle">Explore my latest work and personal projects</p>
-
-        <div class="projects-grid">
-            <div class="project-card">
-                <img src="images/project1.png" alt="Google Drive Face Recognition Tool">
-                <h3>Google Drive Face Recognition Tool </h3>
-                <p>Developed a Python script to scan a specified Google Drive folder for images containing faces that
-match a user-provided target image.Utilized the Google Drive API for file access and the face recognition library for face detection and comparison.Downloaded all matching images to a local folder.</p>
-                <div class="tech-stack">
-                    <span class="tag">Python</span>
-                    <span class="tag">Google Drive API</span>
-                    <span class="tag">Face recognition library</span>
-                    <span class="tag">google-authorization</span>
-                    <span class="tag">NumPy</span>
-                </div>
-                <div class="project-actions">
-                    <a href="#" class="button primary-button">Project Page</a>
-                    <a href="#" class="button secondary-button">Demo</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="images/project2.png" alt="News Genie Project">
-                <h3>AI-Powered Recipe Recommendation App</h3>
-                <p>a web application where users can input ingredients they have, dietary restrictions, and preferences, and receive personalized recipe recommendations powered by an AI model.</p>
-                <div class="tech-stack">
-                    <span class="tag">Next.js</span>
-                    <span class="tag">Tailwind CSS</span>
-                    <span class="tag">Python</span>
-                    <span class="tag">An open-source</span>
-                    <span class="tag">PostgreSQL</span>
-                </div>
-                <div class="project-actions">
-                    <a href="#" class="button github-button">GitHub</a>
-                    <a href="#" class="button secondary-button">Demo</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="placeholder-project3.jpg" alt="Modera AI Project">
-                <h3>Modera AI</h3>
-                <p>An AI-powered content moderation platform with a public RESTful API for real-time text and image analysis. Built with Node.js, Express, and PostgreSQL on Supabase; it integrates OpenAI API for text moderation and Google Cloud Vision API for image analysis.</p>
-                <div class="tech-stack">
-                    <span class="tag">React.js</span>
-                    <span class="tag">Node.js</span>
-                    <span class="tag">Express</span>
-                    <span class="tag">PostgreSQL</span>
-                    <span class="tag">Supabase</span>
-                    <span class="tag">OpenAI API</span>
-                    <span class="tag">Google Cloud Vision API</span>
-                    <span class="tag">JWT Authentication</span>
-                </div>
-                <div class="project-actions">
-                    <a href="#" class="button github-button">GitHub</a>
-                    <a href="#" class="button secondary-button">Demo</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="show-more-container">
-            <a href="#" class="button">Show More</a>
-        </div>
+  <section class="hero">
+    <div class="hero-content">
+      <div class="profile-image">
+        <img src="placeholder-profile.jpg" alt="Riya Patel" />
+      </div>
+      <h2 class="welcome-text">Welcome to My Portfolio</h2>
+      <h1 class="hero-title">Hi, I'm Riya Patel</h1>
+      <p class="hero-description">
+        Passionate developer with expertise in creating innovative, AI-driven web applications and dynamic software solutions.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="button primary-button">View Projects</a>
+        <a href="#contact" class="button secondary-button">Get in Touch</a>
+      </div>
     </div>
-</section>
+  </section>
+
+  <section id="projects" class="featured-projects-section">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <p class="section-subtitle">Explore my latest work and personal projects</p>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <img src="images/project1.png" alt="Google Drive Face Recognition Tool" />
+          <h3>Google Drive Face Recognition Tool</h3>
+          <p>Python script that scans Google Drive for images matching a target face, using face recognition and Google API.</p>
+          <div class="tech-stack">
+            <span class="tag">Python</span>
+            <span class="tag">Google Drive API</span>
+            <span class="tag">Face recognition</span>
+            <span class="tag">NumPy</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="button primary-button">Project Page</a>
+            <a href="#" class="button secondary-button">Demo</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <img src="images/project2.png" alt="Recipe App" />
+          <h3>AI-Powered Recipe Recommendation App</h3>
+          <p>Web app suggesting recipes using ingredients input and AI-powered personalization.</p>
+          <div class="tech-stack">
+            <span class="tag">Next.js</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">Python</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="button github-button">GitHub</a>
+            <a href="#" class="button secondary-button">Demo</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <img src="images/project3.png" alt="CureSense" />
+          <h3>CureSense</h3>
+          <p>AI-powered health assistant providing personalized lifestyle suggestions, symptom checks, and disease alerts.</p>
+          <div class="tech-stack">
+            <span class="tag">Streamlit</span>
+            <span class="tag">Gemini</span>
+            <span class="tag">Python</span>
+            <span class="tag">OpenAI API</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="button github-button">GitHub</a>
+            <a href="#" class="button secondary-button">Demo</a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <img src="images/project4.png" alt="Resume Analyzer" />
+          <h3>AI-Powered Resume Analyzer</h3>
+          <p>Streamlit app using Gemini to score resumes, suggest improvements, and recommend courses for job seekers.</p>
+          <div class="tech-stack">
+            <span class="tag">Streamlit</span>
+            <span class="tag">Python</span>
+            <span class="tag">Gemini API</span>
+            <span class="tag">pdfplumber</span>
+            <span class="tag">Plotly</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/Patelriyaaa/Resume_Analyzer" class="button github-button">GitHub</a>
+            <a href="#" class="button secondary-button">Demo</a>
+          </div>
+        </div>
+
+        <!-- Project 5 - Initially Hidden -->
+        <div class="project-card hidden">
+          <img src="images/project5.png" alt="Job Tracker Chrome Extension" />
+          <h3>Job Tracker Chrome Extension</h3>
+          <p>Helps users track job applications directly from job boards like LinkedIn and Indeed, and stores them in a local database.</p>
+          <div class="tech-stack">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Chrome Extension</span>
+            <span class="tag">IndexedDB</span>
+            <span class="tag">HTML/CSS</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="button github-button">GitHub</a>
+            <a href="#" class="button secondary-button">Demo</a>
+          </div>
+        </div>
+
+        <!-- Project 6 - Initially Hidden -->
+        <div class="project-card hidden">
+          <img src="images/project6.png" alt="AI Face Blur Tool" />
+          <h3>AI Face Blur Tool</h3>
+          <p>Privacy-focused AI web app that detects and blurs faces in user-uploaded images using face detection algorithms.</p>
+          <div class="tech-stack">
+            <span class="tag">Python</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">Flask</span>
+            <span class="tag">HTML/CSS</span>
+          </div>
+          <div class="project-actions">
+            <a href="#" class="button github-button">GitHub</a>
+            <a href="#" class="button secondary-button">Demo</a>
+          </div>
+        </div>
+      </div>
+
+      
+
+  <!-- Load More / Less Button -->
+<div class="show-more-container">
+  <a href="#" id="toggleButton" class="button">Show More</a>
+</div>
+<script>
+  const toggleButton = document.getElementById('toggleButton');
+  const hiddenProjects = document.querySelectorAll('.project-card.hidden');
+
+  toggleButton.addEventListener('click', function (e) {
+    e.preventDefault();
+    hiddenProjects.forEach(card => card.classList.toggle('hidden'));
+
+    if (toggleButton.textContent === 'Show More') {
+      toggleButton.textContent = 'Show Less';
+    } else {
+      toggleButton.textContent = 'Show More';
+    }
+  });
+</script>
+
+        </section>
 <section id="skills" class="skills-section">
     <div class="container">
         <h2>Skills & Expertise</h2>
@@ -329,5 +400,7 @@ experience and engagement.</li>
         </footer>
 
     <script src="script.js"></script>
+</body>
+</html>
 </body>
 </html>
